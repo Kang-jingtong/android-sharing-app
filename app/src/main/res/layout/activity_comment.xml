@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:background="@drawable/bt_back"
+        android:drawableLeft="@drawable/back"
+        android:textAllCaps="false"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/protrait"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="12dp"
+                android:background="@drawable/head"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_toRightOf="@id/protrait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/friend_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="好友昵称"
+                    android:textColor="#2CA3E5"/>
+
+                <TextView
+                    android:id="@+id/edit_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="主要内容"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_below="@id/linear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@id/linear1">
+
+                <ImageView
+                    android:id="@+id/friend_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/head"
+                    android:scaleType="centerCrop"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear2"
+                android:layout_alignLeft="@id/linear1"
+                android:layout_marginTop="10dp"
+                android:text="30分钟前"/>
+
+            <Button
+                android:id="@+id/addComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/time_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="false"
+                android:text=" Comment"
+                android:background="@drawable/bt_main"
+                android:drawableRight="@drawable/add"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:background="#F5FFFA"
+        />
+    <ListView
+        android:id="@+id/lv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginTop="5dp"
+        android:divider="@color/colorLightPurple"
+        android:dividerHeight="1dp"
+        android:foregroundGravity="center"
+        android:listSelector="@drawable/list_item"
+        />
+
+</LinearLayout>
+

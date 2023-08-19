@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ModifyUserInfoActivity">
+    <Button
+        android:id="@+id/back_to_userinfo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:background="@drawable/bt_back"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/head"/>
+        <RadioGroup
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/boy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boy"/>
+            <RadioButton
+                android:id="@+id/girl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Girl"/>
+            <RadioButton
+                android:id="@+id/secret"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secret"/>
+        </RadioGroup>
+        <EditText
+            android:id="@+id/input_what_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="what_up:"
+            />
+        <Button
+            android:id="@+id/select_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Birthday"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@drawable/bt_login"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:background="@drawable/bt_main"/>
+
+    </LinearLayout>
+</LinearLayout>

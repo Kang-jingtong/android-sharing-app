@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScreenActivity"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <SearchView-->
+<!--            android:id="@+id/search"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@drawable/bt_main"-->
+<!--            android:queryHint="search"/>-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorBeige">
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                />
+            <Button
+                android:id="@+id/addCategory"
+                android:textAllCaps="false"
+                android:background="@drawable/add"
+                android:gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+
+                />
+
+            <Button
+                android:id="@+id/Post"
+                android:textAllCaps="false"
+                android:background="@drawable/post"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"
+
+                />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="550dp"
+            android:layout_marginTop="5dp"
+            android:divider="@color/colorLightPurple"
+            android:dividerHeight="1dp"
+            android:foregroundGravity="center"
+            android:listSelector="@drawable/list_item"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/main_screen"
+                android:text="Moments"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:textAllCaps="false"
+                android:background="@drawable/bt_main"
+                android:drawableTop="@drawable/moment"/>
+            <Button
+                android:id="@+id/user_info"
+                android:layout_weight="1"
+                android:text="User"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:textAllCaps="false"
+                android:background="@drawable/bt_main"
+                android:drawableTop="@drawable/man"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

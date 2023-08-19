@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".EditActivity">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:background="@drawable/bt_back"
+        android:drawableLeft="@drawable/back"/>
+    <Spinner
+        android:id="@+id/spinneredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAlignment="center"
+        />
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:text="Send"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/bt_green"
+        android:layout_toRightOf="@id/back"
+        android:textAllCaps="false"
+        />
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Input your thoughts..."
+        android:layout_below="@id/back"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/add_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edit"
+        android:background="@drawable/icon"
+        />
+    <ImageView
+        android:id="@+id/photo"
+        android:visibility="gone"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/add_pic"
+        />
+</RelativeLayout>
